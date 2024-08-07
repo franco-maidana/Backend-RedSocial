@@ -11,13 +11,13 @@ const server = express();
 const PUERTO = process.env.PUERTO;
 
 const ready = () => {
-  console.log("server ready on port :" + PUERTO);
+  console.log("server ready on port:" + ' ' + PUERTO);
   connection();
 };
 
 // Middlewares
 server.use(cors({
-  origin: 'https://frond-end-red-social-react.vercel.app',
+  origin: true,
   credentials: true
 }));
 
