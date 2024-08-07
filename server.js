@@ -8,7 +8,7 @@ import indexRouter from "./router/index.router.js";
 dotenv.config();
 
 const server = express();
-const PUERTO = process.env.PUERTO  || 3900;
+const PUERTO = process.env.PUERTO;
 
 const ready = () => {
   console.log("server ready on port :" + PUERTO);
